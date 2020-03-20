@@ -24,9 +24,11 @@
 #include <logging/WriterBackend.h>
 #include <threading/formatters/JSON.h>
 #include <threading/Formatter.h>
+#include <cstdint>
 
 #include "kafka.bif.h"
 #include "TaggedJSON.h"
+
 
 namespace RdKafka {
     class Conf;
