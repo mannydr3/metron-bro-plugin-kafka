@@ -17,6 +17,7 @@
 
 #include "KafkaWriter.h"
 #include "events.bif.h"
+#include <cstdint>
 
 using namespace logging;
 using namespace writer;
