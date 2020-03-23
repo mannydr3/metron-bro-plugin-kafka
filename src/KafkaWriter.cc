@@ -40,7 +40,7 @@ KafkaWriter::KafkaWriter(WriterFrontend* frontend):
   mocking = BifConst::Kafka::mock;
 
   // json_timestamps
-  ODesc *tsfmt;
+  ODesc tsfmt;
   BifConst::Kafka::json_timestamps->Describe(&tsfmt);
   json_timestamps.assign(
       (const char*) tsfmt.Bytes(),
@@ -246,7 +246,7 @@ bool KafkaWriter::DoFinish(double network_time)
 bool KafkaWriter::DoWrite(int num_fields, const threading::Field* const* fields, threading::Value** vals)
 {
     if (!mocking) {
-        ODesc *buff;
+        ODesc buff;
         buff.Clear();
 
         // format the log entry
