@@ -16,6 +16,7 @@
  */
 
 #include "TaggedJSON.h"
+#include <Desc.h>
 
 namespace threading { namespace formatter {
 
