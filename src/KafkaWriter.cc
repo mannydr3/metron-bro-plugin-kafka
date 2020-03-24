@@ -18,7 +18,7 @@
 #include "KafkaWriter.h"
 #include "events.bif.h"
 #include <cstdint>
-#include </zeek/src/Desc.h>
+#include <Desc.h>
 
 using namespace logging;
 using namespace writer;
